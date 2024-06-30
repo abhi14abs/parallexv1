@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Parallas Effect</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-sm bg-white navbar-dark border-bottom border-success">
+                <div class="container-fluid">
+                    <h1 class="ms-4" style="font-style: italic;">Parallax <span class="text-success">Effect</span></h1>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon custom-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-success" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#about" onclick="myFunction"><i class="fa-solid fa-user"></i> About Us</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#services"><i class="fa-solid fa-store"></i> Services</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#contact"><i class="fa-solid fa-address-card"></i> Contact Us</a>
+                            </li>  
+                        </ul>
+                        <a class="btn btn-success text-center border border-md ms-4 me-4" id="login" href="#" role="button">Register</a>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <main>
+
+            <!-- Slider section -->
+            <div class="slider">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./Images/slider_01.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./Images/slider_02.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <!-- About section -->
+            <section class="container-fluid my-5">
+                <h3 class="text-center" id="about">About <span class="text-success">Us</span></h3>
+                <div class="about container row ms-auto me-auto">
+                    <div class="col-12 text-center col-sm-12 col-md-6 col-xl-6">
+                        <p class="text-start pt-5">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo maxime aperiam iusto exercitationem quod 
+                            quis sapiente enim ipsam. Ex quidem labore itaque quis mollitia quia.
+                        </p>
+                        <p class="text-start pt-3">
+                            perferendis sint odio quos quae recusandae 
+                            expedita animi excepturi aperiam minima odit suscipit? Ea soluta amet provident animi facilis illo ipsam
+                            exercitationem dolores maiores officia.
+                        </p>
+                        <div class="text-start">
+                            <button class="btn btn-primary me-5">Read more</button>
+                            <button class="btn btn-success">Request a Callback</button>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center col-sm-12 col-md-6 col-xl-6">
+                        <img src="./Images/about.jpg" alt="" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </section>
+            
+            <!-- Services section -->
+            <h3 class="mt-5 mb-5 text-center" id="services">Services</h3>
+            <section class="services text-center">
+                <div class="parallax1 darkoverlay">
+                    <div class="service_name overlay">
+                        <div class="heading py-4">
+                            <h4 class="my-3 text-white">Grocery</h4>
+                            <button class="btn btn-success">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services text-center">
+                <div class="parallax2 darkoverlay">
+                    <div class="service_name overlay">
+                        <div class="heading py-4">
+                            <h4 class="my-3 text-white">Mobiles</h4>
+                            <button class="btn btn-success">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services text-center">
+                <div class="parallax3 darkoverlay">
+                    <div class="service_name overlay">
+                        <div class="heading py-4">
+                            <h4 class="my-3 text-white">Fashion</h4>
+                            <button class="btn btn-success">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services text-center">
+                <div class="parallax4 darkoverlay">
+                    <div class="service_name overlay">
+                        <div class="heading py-4">
+                            <h4 class="my-3 text-white">Electronics</h4>
+                            <button class="btn btn-success">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services text-center">
+                <div class="parallax5 darkoverlay">
+                    <div class="service_name overlay">
+                        <div class="heading py-4">
+                            <h4 class="my-3 text-white">Home & Furniture</h4>
+                            <button class="btn btn-success">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services text-center">
+                <div class="parallax6 darkoverlay">
+                    <div class="service_name overlay">
+                        <div class="heading py-4">
+                            <h4 class="my-3 text-white">Appliances</h4>
+                            <button class="btn btn-success">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonial -->
+                
+                <section class="testimonial-section mt-5">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h3 class="mb-3">Testimonial</h3>
+                                <h5 class="mb-3">What Our Clients Say</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial">
+                                        <img src="./Images/tes01.jpg" class="rounded-circle border border-success border-3 rounded-circle p-1" alt="Client 1">
+                                    <h5>Tony Stark</h5>
+                                    <p>"This company provided excellent services. Highly recommended!"</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial">
+                                    <img src="./Images/tes01.jpg" class="rounded-circle border border-success border-3 rounded-circle p-1" alt="Client 1">
+                                    <h5>Dr. Strange</h5>
+                                    <p>"Fantastic experience! I will definitely come back for more."</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial">
+                                    <img src="./Images/tes01.jpg" class="rounded-circle border border-success border-3 rounded-circle p-1" alt="Client 1">
+                                    <h5>Iron Man</h5>
+                                    <p>"Top-notch customer service and quality work. Five stars!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form">
+                <div class="container">
+                    <h3 class="text-center my-3" id="contact">Contact Us</h3>
+                    <p class="text-center my-3">Don't hesitae to Contact us.</p>
+                    <div class="container row">
+                        <div class="col-12 col-sm-6 col-md-6 col-xl-6 mb-5">
+                            <div class="mb-3">
+                                <label class="form-label">Enetr Name</label>
+                                <input type="email" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Email</label>
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                            </div>
+                            <button class="btn btn-success border col-12 mt-3">Submit</button>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-xl-6 mx-auto">
+                            <div class="">
+                                <div class=" col-12 col-sm-6 col-md-6 col-xl-6 mx-auto mt-4 text-center">
+                                    <div class="">
+                                      <h5 class="card-title">Address:</h5>
+                                      <p class="card-text">VXQW+36P, Munshipulia Chouraha, Munshi Pulia, Block C, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
+                                      <!-- <a href="#" class="btn btn-success">View map</a> -->
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="row container mx-auto text-center mt-5">
+                                    <div class=" col-12 col-sm-6 col-md-6 col-xl-6">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Call us:</h5>
+                                          <p class="card-text">+91-5879648576, 8679578345</p>
+                                          <a href="#" class="btn btn-success">Call now!</a>
+                                        </div>
+                                     </div>
+                                     <div class=" col-12 col-sm-6 col-md-6 col-xl-6">
+                                        <div class="card-body">
+                                          <h5 class="card-title">E-mail:</h5>
+                                          <p class="card-text">example@gmail.com</p>
+                                          <a href="#" class="btn btn-success">Send mail</a>
+                                        </div>
+                                     </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map -->
+            <section class="map">
+                <div class="container">
+                    <h3 class="text-center mt-5">View on Map</h3>
+                    <p class="text-center mt-3">Let's meet today <span class="text-success">!</span></p>
+                </div>
+                <div class="container-fluid">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28467.80584323348!2d80.97427431570618!3d26.88839308254411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999599a333d6095%3A0x1457900e87728f72!2sMunsi%20puliya%20metro%20station!5e0!3m2!1sen!2sin!4v1715756623880!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-top footer">
+           <div class="container my-5">
+            <div class="container row">
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                    <h1 style="font-style: italic;" class="mt-3">Parallax <span class="text-success">Effect</span></h1>
+                    <h6>Parallax Effext India Private Limited,</h6>
+                    <p>incorporated under Companies Act 2013 and started its journey from the year 2014 as a direct selling entity.</p>
+                    <div class="icons">
+                        <a class="nav-link text-success fs-2" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a class="nav-link text-success fs-2" href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="nav-link text-success fs-2" href="https://www.x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a class="nav-link text-success fs-2" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                    <h5 class="mt-3">QUICK LINK</h5>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#about">About Us</a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#services">Services</a>
+                        </li>  
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#contact">Contact Us</a>
+                        </li>  
+                      </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                    <h5 class="mt-3">OUR COMPANY</h5>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Shipping and Return Policy</a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Turms & Conditions</a>
+                        </li>  
+                      </ul>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+                    <h5 class="mt-3">CONTACT US</h5>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#"><i class="fa-solid fa-phone"></i> +91-8579468750</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#"><i class="fa-solid fa-location-dot"></i> VXQW+36P, Munshipulia Chouraha, Munshi Pulia, Block C, Indira Nagar, Lucknow, Uttar Pradesh 226016</a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" href="#"><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
+                        </li>  
+                      </ul>
+                </div>
+            </div>
+           </div>
+
+           <!-- Copyrights Section -->
+           <div class="copyrights border-top">
+            <p class="text-center my-3">© <span class="text-success">PARALLAX EFFECT</span> All Rights Reserved.</p>
+           </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

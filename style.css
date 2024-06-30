@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+  
+  .parallax1 {
+    background-image: url("./Images/grocery.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    background-image: url("./Images/mobiles.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    background-image: url("./Images/fashion.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .parallax4 {
+    background-image: url("./Images/electronic.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .parallax5 {
+    background-image: url("./Images/home&furniture.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  .parallax6 {
+    background-image: url("./Images/appliances.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.darkoverlay::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(0, 11, 13, 0.5);
+  z-index: 10; 
+}
+
+.darkoverlay .overlay {
+  position: relative;
+  z-index: 20;
+}
+
+  .service_name{
+    padding-top: 160px;
+  }
+
+  .container-fluid{
+    padding: 0%;
+  }
+
+  .icons{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .testimonial-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+.testimonial {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.testimonial img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.testimonial h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.testimonial p {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.footer{
+  background-color: #f8f9fa;
+}
+
+h3{
+  font-style: italic;
+}
+
+
+
+.custom-toggler {
+  border-color: #343a40;
+}
+
+.custom-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2834, 34, 34, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
